@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="
+    sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <form action="">
+        <div class="topo">
+            <h1 id="titulo"> Cadastro de Clientes </h1>
+            <p id="subtitulo">Complete as informações</p>
+            <br>
+        </div>
+    
+        
+            <fieldset class="grupo">
+                <div>
+                    <label for="nome"><strong>Nome:</strong></label><br>
+                    <input type="text" name="nome" id="nome"  required>
+                    
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"> <strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset>
+    
+            <div class="campo">
+                <label for="email"><strong>E-mail:</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+    
+            <div class="campo">
+                <label><strong> Qual o ramo da Empresa? </strong></label>
+                <label>
+                    <input type="radio" name="empresa" value="Desenvolvimento de Software" checked>Desenvolvedor de Software
+                </label>
+                <label>
+                    <input type="radio" name="empresa" value="Redes de Computadores">Manutenção de Redes de Computadores
+                </label>
+                <label>
+                    <input type="radio" name="empresa" value="Analista de Relacionamento">Analista de Relacionamento
+                </label>
+                <label>
+                    <input type="radio" name="empresa" value="Suporte Tecnico">Suporte Técnico
+                </label>
+                <label>
+                    <input type="radio" name="empresa" value="Parceirias">Parceirias
+                </label>
+            </div>
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+    
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Quais as tecnologias que você utiliza ?</strong> </label>
+                    <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia1">CSS</label>
+                    <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascript">
+                    <label for="tecnologia1">JavaScript</label>
+                    <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Java">
+                    <label for="tecnologia1">Java</label>
+                </div>
+            </fieldset>
+    
+            <div class="campo">
+               
+                <br><label for="mensagem">Conte sobre o trabalho !</label><br>
+                
+                <textarea row="10" style="width: 30em" id="mensagem" name="mensagem" required></textarea>
+                
+            </div>
+    <button id="click" type="submit" onclick="alert();"> Enviar </button>
+        <script src="sweetalert.min.js"></script>  
+        <script type="text/javascript" src="index.js">
+        
+        </script>
+    </form>
+</body>
+</html>
